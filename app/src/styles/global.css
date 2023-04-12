@@ -176,6 +176,10 @@ h5 {
 	font-size: var(--text-xl);
 }
 
+p {
+	max-width: 75%;
+}
+
 /* Utilities */
 
 .sr-only {

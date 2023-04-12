@@ -1,120 +1,234 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
-				/>
-			</Hero>
+<BaseLayout
+  title="About | Christ Mbombo Mokonda"
+  description="About Christ Mbombo Mokonda"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Lisez ci-dessous pour en savoir plus sur mon profil et mon background"
+      >
+        <img
+          width="1553"
+          height="873"
+          src="/assets/christ-gimp.png"
+          alt="About Christ"
+        />
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-					</p>
-					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
-					</p>
-					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">A propos</h2>
+        <div class="content">
+          <p>
+            Médecine, Sociologie. Informatique. Voici dans l'ordre chronologique
+            les spécialités dans lesquels j'ai étudié dans l'enseignement
+            supérieur.<br />
+            Ce sont trois domaines différents les uns des autres. Mais dans chacun
+            d'entre eux j'ai appris des choses, maitrisé différents concepts . C'est
+            finalement en informatique que j'ai trouvé ma vocation, et plus particulièrement
+            le développement web. <br />
+          </p>
+          <p>
+            Tenter des expériences, parfois échouer, mais au final trouver un
+            plan, une idée pour s'en sortir, jusqu'à arriver à satisfication,
+            voici mon leitmotiv. <br />
+            Que ce soit dans mon parcours scolaire et professionnel, ainsi que dans
+            les projets web et personnels, cette idée est toujours présente, et elle
+            continuera à être ma source de motivation.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Parcours Professionnel</h2>
+        <div class="content">
+          <p><strong>Ingenieur Consultant Quality Insurance</strong></p>
+          <p><em>Athoria , Fevrier 2023 -Aujourd'hui</em></p>
+          <br />
+          <p>Client : <em>Groupe SeLoger</em></p>
+          <p>
+            Participation à l’élaboration de la stratégie de test en
+            collaboration avec mon équipe ( Product Manager , développeurs,
+            autres QA) lors des planning
+          </p>
+          <p>
+            Écritures des critères d’acceptances des tests en accord avec la
+            stratégie de tests définis
+          </p>
+          <p>
+            <strong>Tests de non-régression</strong> manuels sur les tickets JIRA
+            lors des sprints
+          </p>
+          <p>
+            Réalisation de <strong>tests end-to-end</strong> manuels sur les tickets
+            JIRA
+          </p>
+          <p>
+            Ecriture de <strong>cahier de tests</strong> sur des cas fonctionnels
+            fréquents avec XRAY
+          </p>
+          <p>Rédaction de la documentation technique (Confluence, Notion)</p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Alternant Développeur full stack</strong></p>
+          <p><em>Swisslife France , Janvier 2021 - Décembre 2022</em></p><br />
+          <p>Projet : <em>POC RabbitMQ</em></p>
+          <p>
+            Implémentation de scénario d’envoi et de réception de messages entre
+            deux applications et étude du fonctionnement des deux applications (
+            architecture applicative , langage utilisé etc…)
+          </p>
+          <p>
+            <strong>Benchmark</strong> des solutions existantes : choix des outils
+            et de la techno
+          </p>
+          <p>
+            Développement de POC sur l’outil RabbitMQ en NodeJS avec <strong
+              >création de log et script Bash</strong
+            >
+          </p>
+          <p>Analyse des resultats du POC en local</p>
+          <p>
+            Création d’un plan et implémentation des <strong
+              >tests unitaires</strong
+            > avec JEST
+          </p>
+          <p>
+            Mise en place d’une documentation d’utilisation de l’outil pour les
+            utilisateurs de l’outil (développeurs)
+          </p>
+          <br />
+          <p><em>Run</em></p>
+          <p>Maintenance de la documentation interne au sein de Confluence</p>
+          <p>
+            Création de divers pages au sein de la documentation interne , avec
+            des pages explicatifs sur un large éventail d'applications
+          </p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Développeur front-end stagiaire</strong></p>
+          <p><em>Vitriweb , Avril 2019- Mai 2019</em></p>
+          <br />
+          <p>Développement de maquettes de site en pré-production</p>
+          <p>Déploiement de maquettes après validation des clients</p>
+          <p>Reprise de sites de clients et refonte</p>
+          <p>Mise à jour des maquettes et sites à effectuer</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p><strong>Master Ingénierie du Web</strong></p>
+          <p>ESGI Paris , 2021-2022</p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Licence Informatique</strong></p>
+          <p>Université Paris 8 , 2015-2019</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Compétences</h2>
+        <div class="content">
+          <p><strong>Langage / Framework</strong></p>
+          <p>
+            Javascript , Typescript , NodeJS, Express, ReactJS, VueJS, Nestjs ,
+            NextJS , AstroJS
+          </p>
+          <p>Python, Flask , Django</p>
+          <p>PHP , Symfony , Laravel</p>
+          <p>SQL , Postgre, MongoDB</p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Technologies / outils</strong></p>
+          <p>Git,GitLab,Github Actions,Docker</p>
+          <p>Salesforce, XRAY / JIRA</p>
+          <p>Stack ELK,RabbitMQ, Confluence ,Pandas, Numpy</p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Tests</strong></p>
+          <p>Unitaire : Jest, PHPUnit</p>
+          <p>Performance : K6 , Blackfire</p>
+          <p>Fonctionnel : Cucumber</p>
+          <p>End to End : Nightwatch</p>
+          <br />
+        </div>
+        <div class="content">
+          <p><strong>Méthodologie et qualité de code</strong></p>
+          <p>Agile – SCRUM</p>
+          <p>Cycle en V</p>
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
