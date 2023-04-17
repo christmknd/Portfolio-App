@@ -1,7 +1,5 @@
 # Astro Starter Kit: Portfolio
 
-URL : https://app-nu-one.vercel.app
-
 ```
 npm create astro@latest -- --template portfolio
 ```

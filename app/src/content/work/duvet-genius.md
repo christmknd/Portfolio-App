@@ -1,7 +1,7 @@
 ---
 title: Green IT
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/greenit.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Single Page Application qui permet de calculer l'indice de fragilité des villes en France

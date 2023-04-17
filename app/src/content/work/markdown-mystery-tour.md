@@ -1,28 +1,21 @@
 ---
-title: Faussaire
+title: Portfolio
 publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/portfolio.png
 img_alt: Iridescent ripples of a bright blue and pink liquid
 description: |
-  Site qui permet de générer des individus et des entités fictifs
+  Mon portfolio de développeur web
 tags:
   - Développement web front end
-  - Vue 3
-  - Test E2E
+  - Astro
 ---
 
-#### Entités générés
+#### Présentation
 
-Les entités générés dans ce projet sont :
-
-- un individu
-- une entreprise
-- un compte bancaire
+Mon portfolio en tant que développeur web fullstack. Il s'agit du site que vous êtes en train de visiter au moment ou vous lisez ces lignes
 
 #### Technos
 
 - Langage : Javascript
-- Framework : Vue 3
-- Tests unitaires : Jest
-- Tests end-to-end : Cypress
-- CI : Github Actions
+- Framework : Astro
+- Versionning : Github
