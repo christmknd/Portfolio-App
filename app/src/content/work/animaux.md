@@ -36,3 +36,10 @@ URL : https://lacartedesanimaux.online
 
 - Template : Twig
 - CSS : Sass
+
+#### Setup
+
+En local :
+
+- Initialiser les images docker : docker-compose build --no-cache
+- Lancer les containers docker : docker-compose up -d

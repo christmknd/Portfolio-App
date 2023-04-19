@@ -19,3 +19,9 @@ Mon portfolio en tant que développeur web fullstack. Il s'agit du site que vous
 - Langage : Javascript
 - Framework : Astro
 - Versionning : Github
+- Déploiement : Vercel
+
+#### Setup
+
+- Installer les dépendances : npm install
+- Démarrer le projet en local : npm run dev ( http://localhost:3000)
