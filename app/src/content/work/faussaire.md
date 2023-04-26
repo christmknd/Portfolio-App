@@ -11,48 +11,20 @@ tags:
   - Vue 3
 ---
 
-#### Présentation
+#### Problématique
 
-Application permettant de créer de fausses identités lorsqu'on souhaite éviter de donner ses vraies données sur Internet
+Lorsque l'on surfe sur les webs, il arrive très souvent que l'on nous demande des données personnelles, et notamment à des fins commerciales.
+Pour éviter ce problème, j'ai mis en place cette petite app qui crée donc de fausses données aléatoirement .
 
 Le design est volontairement minimaliste : le but est d'abord fonctionnelle.
 
-#### Données
+#### Fonctionnalités
 
-Identité
-
-- Nom
-- Prénom
-- Téléphone
-- Adresse mail
-- Adresse postale
-
-Entreprise
-
-- Raison sociale
-- Adresse
-- Téléphone
-- SIRET
-- SIREN
-
-Faux compte bancaire
-
-- Nom
-- Prénom
-- Téléphone
-- Adresse mail
-- Adresse postale
-- IBAN
-- RIB
+- génération d'une identité fictive (homme ou femme)
+- génération d'une société fictive (basé en France)
+- génération d'un compte bancaire fictif (domicilié en France)
 
 #### Technos
 
 - Langage : Javascript
 - Framework : Vue JS ( Vue 3)
-- Package : FakerJS (https://fakerjs.dev/guide/)
-
-#### Setup du projet
-
-- Cloner le projet à partir de la page Git (https://github.com/christmknd/Faussaire-App)
-- Installer les dépendances : npm install
-- Démarrer le projet en local : npm run dev

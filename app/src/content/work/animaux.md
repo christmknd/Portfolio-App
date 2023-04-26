@@ -11,9 +11,9 @@ tags:
   - Symfony
 ---
 
-#### Présentation
+#### Problématique
 
-Projet annuel de 4ème année de licence, réalisé en groupe
+Selon les chiffres de la SPA , des dizaines de milliers d'animaux de compagnie sont abandonnés chaque année . Le but de ce projet était donc de répondre à cette problématique , en mettant en place une plateforme qui puisse faciliter l'adoptation d'animaux, met qui puisse aussi aussi aider des assocations à créer des évenements afin de soutenir cette cause.
 
 URL : https://lacartedesanimaux.online
 
@@ -36,10 +36,3 @@ URL : https://lacartedesanimaux.online
 
 - Template : Twig
 - CSS : Sass
-
-#### Setup
-
-En local :
-
-- Initialiser les images docker : docker-compose build --no-cache
-- Lancer les containers docker : docker-compose up -d

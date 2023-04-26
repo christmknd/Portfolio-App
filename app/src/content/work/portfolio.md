@@ -10,9 +10,17 @@ tags:
   - Astro
 ---
 
-#### Présentation
+#### Problématique
 
-Mon portfolio en tant que développeur web fullstack. Il s'agit du site que vous êtes en train de visiter au moment ou vous lisez ces lignes
+Lorsque l'on souhaite postuler pour un poste de développeur, on dépose majoritairement un CV et une lettre de motivation. Le problème des lettres de motivations , surtout lorsque l'on enchaine les candidatures, c'est qu'elles peuvent vite paraître impersonnelle.
+Pour répondre à ce problème, j'ai décidé donc décider de créer ce portfolio.
+
+Il permet de comprendre mon profil plus amplement qu'avec un simple CV , et permet vous permets si vous êtes recruteurs si je correspond bien au profil que vous recherchez.
+
+#### Fonctionnalités
+
+- Accéder à une présentation de mon profil détaillé et mes projets les plus significatifs
+- Me contacter par mail
 
 #### Technos
 
@@ -20,8 +28,3 @@ Mon portfolio en tant que développeur web fullstack. Il s'agit du site que vous
 - Framework : Astro
 - Versionning : Github
 - Déploiement : Vercel
-
-#### Setup
-
-- Installer les dépendances : npm install
-- Démarrer le projet en local : npm run dev ( http://localhost:3000)
