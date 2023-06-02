@@ -7,9 +7,9 @@ description: |
   Calcul de l'indice de fragilité des villes en France
 tags:
   - Developpement full stack
-  - React
-  - Eco-Conception
-  - Performance
+  - Projet Scolaire
+  - React , Node JS
+  - Performance , éco-conception
 ---
 
 #### Problématique
@@ -36,6 +36,7 @@ Il a aussi été réalisé aussi d'un travail de groupe, dans une démarche d'é
 - Backend : Express JS
 - Frontend : React
   Pas de biblothèque supplémentaire coté front ( ex : Materialize ). React est une librairie avec une approche basé sur les composants , qui peuvent être facilement réutilisé dans d'autres projets. Le fait que React soit une librairie et non un framework ( comme Angular ) le rend plus simple a utiliser et surtout moins volumineux.
+- Lien Github : https://github.com/christmknd/green-it
 
 #### Outils d'éco-conception
 
