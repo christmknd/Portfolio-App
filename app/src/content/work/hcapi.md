@@ -77,7 +77,7 @@ Voici la liste exhaustif des requêtes que vous pouvez effectuez avec cette API 
 - Récupérer toutes les catégories de maisons
   get /api/categories
 
-#### Technos
+#### Environnement technique
 
 - Langage : Javascript
 - Serveur : Node JS , Express

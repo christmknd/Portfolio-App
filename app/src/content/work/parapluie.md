@@ -18,7 +18,7 @@ tags:
 
 Le but de cette application react est très simple : elle affiche la météo de n'importe quel ville , et vous indique , si vous habitez dans cette ville , si vous devriez prendre votre parapluie ou non
 
-#### Technos
+#### Environnement technique
 
 - Langage : Javascript
 - Framework : React

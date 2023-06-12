@@ -40,7 +40,7 @@ Ce projet est donc un POC (Proof of Concept). Je l'ai développé avec Javascrip
 - Scenario 3 : 2 producteur / 2 consommateur / 1 channel de communication
 - Scenario 4 : 2 producteur / 2 consommateur / 2 channel de communication
 
-#### Technos
+#### Environnement technique
 
 - Langage : Javascript
 - Serveur : NodeJS

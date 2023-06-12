@@ -29,7 +29,7 @@ Les divers sources utiles pour ces calculs sont trouvables sur le site de l'INSE
 Ce site permet donc de réaliser d'afficher l'indice de fragilité de n'importe quel ville en France métropolitaine.
 Il a aussi été réalisé aussi d'un travail de groupe, dans une démarche d'éco-conception ou je me suis principalement occupé de la partie front-end , en React , à partir des données calculés en back end.
 
-#### Technos
+#### Environnement technique
 
 - Langage : Javascript => langage stable, avec un temps d'execution rapide et un taux d'énergie faible.
 
