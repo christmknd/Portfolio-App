@@ -5,17 +5,12 @@ import ThemeToggle from "./ThemeToggle.astro";
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
   { label: "Accueil", href: "/" },
-  { label: "Projets", href: "/work/" },
+  { label: "Experiences", href: "/work/" },
   { label: "A propos", href: "/about/" },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
-  {
-    label: "Instagram",
-    href: "https://instagram.com/christmdev",
-    icon: "instagram-logo",
-  },
   {
     label: "GitHub",
     href: "https://github.com/christmknd",
@@ -165,7 +160,8 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 
   .menu-button[aria-expanded="true"] {
     color: var(--gray-0);
-    background: linear-gradient(180deg, var(--gray-600), transparent),
+    background:
+      linear-gradient(180deg, var(--gray-600), transparent),
       radial-gradient(var(--gray-900), var(--gray-800) 150%);
   }
 
@@ -294,7 +290,8 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
     .link {
       padding: 0.5rem 1rem;
       border-radius: 999rem;
-      transition: color var(--theme-transition),
+      transition:
+        color var(--theme-transition),
         background-color var(--theme-transition);
     }
 

@@ -1,39 +1,371 @@
 ---
-import { getCollection } from "astro:content";
-
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
-import PortfolioPreview from "../components/PortfolioPreview.astro";
 import Hero from "../components/Hero.astro";
-import Grid from "../components/Grid.astro";
-
-const projects = (await getCollection("work")).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-);
+import Pill from "../components/Pill.astro";
 ---
 
 <BaseLayout
-  title="Mes projets  | Christ Mbombo Mokonda"
-  description="Une liste de mes projets les plus significatifs"
+  title="Expériences professionnelles | Christ Mbombo Mokonda"
+  description="Découvrez mes expériences professionnelles en développement Full-Stack Java, Spring Boot et React."
 >
   <div class="stack gap-20">
-    <main class="wrapper stack gap-8">
+    <main class="wrapper stack gap-15">
       <Hero
-        title="Mes projets "
-        tagline="Une liste de mes projets les plus significatifs"
+        title="Expériences professionnelles"
+        tagline="Des expériences concrètes en développement logiciel, du développement Full-Stack aux problématiques de qualité et d'architecture."
         align="start"
       />
-      <Grid variant="offset">
-        {
-          projects.map((project) => (
-            <li>
-              <PortfolioPreview project={project} />
-            </li>
-          ))
-        }
-      </Grid>
+
+      <div class="confidentiality">
+        <span class="icon">🔒</span>
+        <div>
+          <strong>Projets professionnels confidentiels</strong>
+          <p>
+            Les expériences présentées décrivent les contextes, responsabilités
+            et technologies utilisées sans exposer de données ou d'éléments
+            propriétaires.
+          </p>
+        </div>
+      </div>
+
+      <section class="experiences" aria-label="Expériences professionnelles">
+        <article class="experience experience-featured">
+          <div class="experience-header">
+            <div>
+              <span class="period">Juillet 2023 — Décembre 2025</span>
+              <h2>MTAE</h2>
+              <p class="role">Développeur Full-Stack</p>
+            </div>
+
+            <span class="badge">Expérience principale</span>
+          </div>
+
+          <div class="experience-content">
+            <div class="context">
+              <h3>Contexte</h3>
+              <p>
+                Développement et évolution d'applications métier dédiées à la
+                facturation électronique et à la comptabilité.
+              </p>
+            </div>
+
+            <div class="stack-block">
+              <h3>Stack technique</h3>
+              <div class="tags">
+                <Pill>Java 17</Pill>
+                <Pill>Spring Boot</Pill>
+                <Pill>Hibernate</Pill>
+                <Pill>JPA</Pill>
+                <Pill>React</Pill>
+                <Pill>JavaScript</Pill>
+                <Pill>MySQL</Pill>
+                <Pill>GitLab</Pill>
+                <Pill>Jenkins</Pill>
+                <Pill>Maven</Pill>
+                <Pill>JUnit</Pill>
+                <Pill>Swagger / OpenAPI</Pill>
+              </div>
+            </div>
+
+            <div class="missions">
+              <h3>Mon intervention</h3>
+
+              <ul>
+                <li>Développement et évolution de fonctionnalités métier</li>
+                <li>Conception et intégration d'API REST</li>
+                <li>Développement d'interfaces utilisateur avec React</li>
+                <li>Implémentation de la logique métier</li>
+                <li>Gestion des documents et des transactions</li>
+                <li>Gestion des calculs de TVA</li>
+                <li>Gestion des accès aux données avec JPA / Hibernate</li>
+                <li>Intégration des API bancaires Powens</li>
+                <li>Intégration des flux d'authentification OpenID Connect</li>
+                <li>Gestion des tokens et des données sensibles</li>
+                <li>Documentation des API avec Swagger / OpenAPI</li>
+                <li>Écriture de tests unitaires avec JUnit</li>
+                <li>
+                  Utilisation de Docker pour les environnements de développement
+                </li>
+                <li>Participation aux workflows GitLab et Jenkins</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience">
+          <div class="experience-header">
+            <div>
+              <span class="period">Février 2023 — Avril 2023</span>
+              <h2>Athoria / Groupe SeLoger</h2>
+              <p class="role">Consultant QA</p>
+            </div>
+          </div>
+
+          <div class="experience-content">
+            <div class="context">
+              <h3>Contexte</h3>
+              <p>
+                Intervention sur les problématiques de qualité logicielle et de
+                validation fonctionnelle.
+              </p>
+            </div>
+
+            <div class="stack-block">
+              <h3>Outils</h3>
+              <div class="tags">
+                <Pill>Jira</Pill>
+                <Pill>Xray</Pill>
+                <Pill>Tests E2E</Pill>
+              </div>
+            </div>
+
+            <div class="missions">
+              <h3>Intervention</h3>
+
+              <ul>
+                <li>Conception de stratégies de test</li>
+                <li>Réalisation de tests end-to-end</li>
+                <li>Rédaction de cas de tests fonctionnels</li>
+                <li>Rédaction de documentation technique</li>
+                <li>Identification et suivi des anomalies</li>
+                <li>Collaboration avec les équipes de développement</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience">
+          <div class="experience-header">
+            <div>
+              <span class="period">2021 — 2022</span>
+              <h2>SwissLife France</h2>
+              <p class="role">Développeur Full-Stack — Alternance</p>
+            </div>
+          </div>
+
+          <div class="experience-content">
+            <div class="context">
+              <h3>Contexte</h3>
+              <p>
+                Réalisation d'un POC destiné à accompagner une équipe technique
+                dans le choix d'une solution de messaging.
+              </p>
+            </div>
+
+            <div class="stack-block">
+              <h3>Technologies</h3>
+              <div class="tags">
+                <Pill>Node.js</Pill>
+                <Pill>Kafka</Pill>
+                <Pill>RabbitMQ</Pill>
+              </div>
+            </div>
+
+            <div class="missions">
+              <h3>Intervention</h3>
+
+              <ul>
+                <li>Réalisation d'un POC Kafka vs RabbitMQ</li>
+                <li>
+                  Comparaison des deux solutions sur un cas d'utilisation
+                  concret
+                </li>
+                <li>Mise en place de scénarios de communication</li>
+                <li>Analyse des différences entre les deux technologies</li>
+                <li>Documentation et restitution des résultats</li>
+                <li>Maintenance de la documentation interne</li>
+                <li>Amélioration de la cohérence des applications</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience experience-compact">
+          <div class="experience-header">
+            <div>
+              <span class="period">2019 · Stage de 2 mois</span>
+              <h2>Vitriweb</h2>
+              <p class="role">Développeur Front-End</p>
+            </div>
+          </div>
+
+          <div class="experience-content">
+            <ul>
+              <li>Intégration de maquettes HTML / CSS</li>
+              <li>Maintenance de sites web existants</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
+
     <ContactCTA />
   </div>
 </BaseLayout>
+
+<style>
+  .confidentiality {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1rem;
+    background: var(--gradient-subtle);
+  }
+
+  .confidentiality .icon {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .confidentiality strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--gray-100);
+    font-family: var(--font-brand);
+  }
+
+  .confidentiality p {
+    max-width: 70ch;
+    margin: 0;
+    color: var(--gray-300);
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience {
+    padding: 2rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1.5rem;
+    background: var(--gray-999);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .experience-featured {
+    border-color: var(--accent-light);
+    background: var(--gradient-subtle);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .period {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-regular);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .experience h2 {
+    margin-bottom: 0.35rem;
+    font-size: var(--text-2xl);
+  }
+
+  .role {
+    margin: 0;
+    max-width: none;
+    color: var(--gray-400);
+    font-size: var(--text-md);
+  }
+
+  .badge {
+    flex-shrink: 0;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: var(--accent-overlay);
+    color: var(--accent-regular);
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .experience-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    padding-top: 2rem;
+  }
+
+  .context {
+    grid-column: 1 / -1;
+  }
+
+  .experience-content h3 {
+    margin-bottom: 0.75rem;
+    font-size: var(--text-lg);
+  }
+
+  .experience-content p {
+    max-width: 70ch;
+    color: var(--gray-300);
+  }
+
+  .stack-block {
+    grid-column: 1 / -1;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .missions {
+    grid-column: 1 / -1;
+  }
+
+  .missions ul,
+  .experience-compact ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 2rem;
+    padding-left: 1.25rem;
+    color: var(--gray-300);
+  }
+
+  .missions li::marker,
+  .experience-compact li::marker {
+    color: var(--accent-regular);
+  }
+
+  .experience-compact .experience-content {
+    display: block;
+    padding-top: 1.5rem;
+  }
+
+  @media (max-width: 50em) {
+    .experience {
+      padding: 1.5rem;
+    }
+
+    .experience-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .experience-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .missions ul,
+    .experience-compact ul {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
