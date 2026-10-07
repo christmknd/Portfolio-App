@@ -1,10 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-// Component Imports
 import CallToAction from "../components/CallToAction.astro";
 import Grid from "../components/Grid.astro";
 import Hero from "../components/Hero.astro";
@@ -12,17 +10,12 @@ import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 
-// Page section components
 import ContactCTA from "../components/ContactCTA.astro";
 import Skills from "../components/Skills.astro";
 
-// Content Fetching: List four most recent work projects
 const projects = (await getCollection("work"))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
   .slice(0, 4);
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <BaseLayout>
@@ -31,17 +24,47 @@ const projects = (await getCollection("work"))
       <header class="hero">
         <Hero
           title="Christ Mbombo Mokonda"
-          tagline="Développeur full stack - Freelance"
+          tagline="Développeur Full-Stack Java / Spring Boot & React"
           align="start"
         >
-          <div class="roles">
-            <Pill><Icon icon="code" size="1.33em" /> Spring Boot</Pill>
-            <Pill><Icon icon="code" size="1.33em" /> React</Pill>
+          <div class="hero-content">
+            <div class="roles">
+              <Pill>
+                <Icon icon="code" size="1.33em" />
+                Java
+              </Pill>
+
+              <Pill>
+                <Icon icon="code" size="1.33em" />
+                Spring Boot
+              </Pill>
+
+              <Pill>
+                <Icon icon="code" size="1.33em" />
+                React
+              </Pill>
+            </div>
+
+            <div class="availability">
+              <span class="availability-dot"></span>
+              Disponible pour de nouvelles missions
+            </div>
+
+            <div class="location">Île-de-France · Remote</div>
+
+            <div class="hero-actions">
+              <CallToAction href="mailto:christmokonda@gmail.com">
+                Me contacter
+                <Icon icon="arrow-right" size="1.2em" />
+              </CallToAction>
+
+              <a class="secondary-action" href="/work/"> Voir mes projets </a>
+            </div>
           </div>
         </Hero>
 
         <img
-          alt="Christ Mbombo Mokonda , développeur full stack , 3D picture"
+          alt="Christ Mbombo Mokonda, développeur Full-Stack Java / React"
           width="480"
           height="620"
           src="/assets/pp.jpeg"
@@ -52,12 +75,52 @@ const projects = (await getCollection("work"))
     </div>
 
     <main class="wrapper stack gap-20 lg:gap-48">
+      <section class="section intro-section">
+        <div class="section-content">
+          <p class="section-label">PROFIL</p>
+
+          <h2>Un développeur Full-Stack orienté produit</h2>
+
+          <p>
+            Je conçois et développe des applications web en intervenant aussi
+            bien sur le back-end que sur le front-end.
+          </p>
+
+          <p>
+            Mon objectif : produire du code maintenable, des APIs robustes et
+            des interfaces efficaces, tout en restant aligné avec les besoins
+            métier.
+          </p>
+
+          <div class="profile-points">
+            <div>
+              <strong>Back-End</strong>
+              <span>Java · Spring Boot · API REST · SQL</span>
+            </div>
+
+            <div>
+              <strong>Front-End</strong>
+              <span>React · JavaScript</span>
+            </div>
+
+            <div>
+              <strong>Environnement</strong>
+              <span>Git · Docker · CI/CD · Tests</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section with-background with-cta">
         <header class="section-header stack gap-2 lg:gap-4">
+          <p class="section-label">RÉALISATIONS</p>
+
           <h3>Mes projets</h3>
+
           <p>
-            Voici un panel des projets professionneles , persos et scolaires les
-            plus significatifs sur lesquels j'ai travaillé
+            Une sélection de projets professionnels, personnels et scolaires
+            illustrant mes compétences techniques et ma capacité à intervenir
+            sur différentes problématiques.
           </p>
         </header>
 
@@ -75,7 +138,93 @@ const projects = (await getCollection("work"))
 
         <div class="cta">
           <CallToAction href="/work/">
-            Voir tout mes projets
+            Voir tous mes projets
+            <Icon icon="arrow-right" size="1.2em" />
+          </CallToAction>
+        </div>
+      </section>
+
+      <section class="missions">
+        <header class="missions-header">
+          <p class="section-label">INTERVENTIONS</p>
+
+          <h2>Comment je peux intervenir</h2>
+
+          <p>
+            Je peux intervenir en renfort d'une équipe existante ou prendre en
+            charge le développement de nouvelles fonctionnalités.
+          </p>
+        </header>
+
+        <div class="mission-grid">
+          <div class="mission">
+            <span>01</span>
+            <h3>Développement</h3>
+            <p>
+              Création et évolution d'applications web avec Java, Spring Boot et
+              React.
+            </p>
+          </div>
+
+          <div class="mission">
+            <span>02</span>
+            <h3>API &amp; Back-End</h3>
+            <p>
+              Conception d'API REST, logique métier, accès aux données et
+              intégration de services.
+            </p>
+          </div>
+
+          <div class="mission">
+            <span>03</span>
+            <h3>Renfort d'équipe</h3>
+            <p>
+              Intégration rapide dans une équipe existante pour accélérer le
+              développement et la livraison.
+            </p>
+          </div>
+
+          <div class="mission">
+            <span>04</span>
+            <h3>Maintenance &amp; évolution</h3>
+            <p>
+              Correction de bugs, amélioration des performances et développement
+              de nouvelles fonctionnalités.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="freelance">
+        <div class="freelance-content">
+          <p class="section-label">FREELANCE</p>
+
+          <h2>Disponible pour une nouvelle mission</h2>
+
+          <p>
+            Vous recherchez un développeur Java / React pour renforcer votre
+            équipe ou développer une nouvelle fonctionnalité ?
+          </p>
+
+          <div class="freelance-details">
+            <div>
+              <span>Localisation</span>
+              <strong>Île-de-France · Remote</strong>
+            </div>
+
+            <div>
+              <span>Profil</span>
+              <strong>Full-Stack Java / React</strong>
+            </div>
+
+            <div>
+              <span>TJM</span>
+              <strong>À partir de 450 €/jour</strong>
+            </div>
+          </div>
+
+          <CallToAction href="mailto:christmokonda@gmail.com">
+            Échanger sur votre projet
             <Icon icon="arrow-right" size="1.2em" />
           </CallToAction>
         </div>
@@ -94,8 +243,64 @@ const projects = (await getCollection("work"))
     gap: 2rem;
   }
 
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .roles {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .availability {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-300);
+  }
+
+  .availability-dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: var(--accent-regular);
+    box-shadow: 0 0 0 4px var(--accent-subtle);
+  }
+
+  .location {
+    font-size: 0.9rem;
+    color: var(--gray-500);
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .secondary-action {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 999px;
+    color: var(--gray-200);
+    text-decoration: none;
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .secondary-action:hover {
+    border-color: var(--gray-600);
+    color: var(--gray-0);
   }
 
   .hero img {
@@ -106,28 +311,56 @@ const projects = (await getCollection("work"))
     box-shadow: var(--shadow-md);
   }
 
-  @media (min-width: 50em) {
-    .hero {
-      display: grid;
-      grid-template-columns: 6fr 4fr;
-      padding-inline: 2.5rem;
-      gap: 3.75rem;
-    }
-
-    .roles {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .hero img {
-      aspect-ratio: 3 / 4;
-      border-radius: 4.5rem;
-      object-fit: cover;
-    }
+  .section-label {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent-regular);
   }
 
-  /* ====================================================== */
+  .intro-section {
+    max-width: 75ch;
+    margin-inline: auto;
+  }
+
+  .section-content h2,
+  .missions-header h2,
+  .freelance h2 {
+    margin-top: 0.5rem;
+    font-size: var(--text-3xl);
+    color: var(--gray-0);
+  }
+
+  .section-content > p {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+    line-height: 1.7;
+  }
+
+  .profile-points {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .profile-points div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    border-left: 2px solid var(--accent-regular);
+    background: var(--gray-999_40);
+  }
+
+  .profile-points strong {
+    color: var(--gray-200);
+  }
+
+  .profile-points span {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+  }
 
   .section {
     display: grid;
@@ -158,35 +391,135 @@ const projects = (await getCollection("work"))
     z-index: -1;
   }
 
-  .with-background.bg-variant::before {
-    --hero-bg: var(--bg-image-subtle-1);
-  }
-
   .section-header {
     justify-self: center;
     text-align: center;
-    max-width: 50ch;
+    max-width: 55ch;
     font-size: var(--text-md);
     color: var(--gray-300);
   }
 
   .section-header h3 {
     font-size: var(--text-2xl);
+    margin: 0;
+  }
+
+  .section-header p {
+    line-height: 1.7;
+  }
+
+  .missions {
+    display: grid;
+    gap: 3rem;
+  }
+
+  .missions-header {
+    max-width: 55ch;
+  }
+
+  .missions-header > p:not(.section-label) {
+    color: var(--gray-400);
+    line-height: 1.7;
+  }
+
+  .mission-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .mission {
+    padding: 1.5rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1rem;
+    background: var(--gray-999_40);
+  }
+
+  .mission > span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-regular);
+  }
+
+  .mission h3 {
+    margin-top: 1rem;
+    font-size: var(--text-xl);
+    color: var(--gray-100);
+  }
+
+  .mission p {
+    color: var(--gray-400);
+    line-height: 1.6;
+  }
+
+  .freelance {
+    padding: 2rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1.5rem;
+    background: var(--gradient-subtle);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .freelance-content {
+    max-width: 70ch;
+  }
+
+  .freelance h2 {
+    margin-bottom: 1rem;
+  }
+
+  .freelance-content > p:not(.section-label) {
+    color: var(--gray-400);
+    font-size: var(--text-lg);
+    line-height: 1.7;
+  }
+
+  .freelance-details {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  .freelance-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .freelance-details span {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray-500);
+  }
+
+  .freelance-details strong {
+    color: var(--gray-200);
   }
 
   @media (min-width: 50em) {
+    .hero {
+      display: grid;
+      grid-template-columns: 6fr 4fr;
+      padding-inline: 2.5rem;
+      gap: 3.75rem;
+    }
+
+    .hero img {
+      aspect-ratio: 3 / 4;
+      border-radius: 4.5rem;
+    }
+
     .section {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "header header header header" "gallery gallery gallery gallery";
       gap: 5rem;
     }
 
-    .section.with-cta {
-      grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
+    .section-content h2,
+    .missions-header h2,
+    .freelance h2 {
+      font-size: var(--text-4xl);
     }
 
     .section-header {
-      grid-area: header;
       font-size: var(--text-lg);
     }
 
@@ -194,39 +527,22 @@ const projects = (await getCollection("work"))
       font-size: var(--text-4xl);
     }
 
-    .with-cta .section-header {
-      justify-self: flex-start;
-      text-align: left;
+    .profile-points {
+      grid-template-columns: repeat(3, 1fr);
     }
 
-    .gallery {
-      grid-area: gallery;
+    .mission-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
     }
 
-    .cta {
-      grid-area: cta;
+    .freelance {
+      padding: 4rem;
+      border-radius: 2rem;
     }
-  }
 
-  /* ====================================================== */
-
-  .mention-card {
-    display: flex;
-    height: 7rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--gray-800);
-    border-radius: 1.5rem;
-    color: var(--gray-300);
-    background: var(--gradient-subtle);
-    box-shadow: var(--shadow-sm);
-  }
-
-  @media (min-width: 50em) {
-    .mention-card {
-      border-radius: 1.5rem;
-      height: 9.5rem;
+    .freelance-details {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
