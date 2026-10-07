@@ -3,43 +3,68 @@ import Icon from "./Icon.astro";
 ---
 
 <section class="box skills">
-  <div class="stack gap-2 lg:gap-4">
+  <div class="skill stack gap-2 lg:gap-4">
     <Icon
       icon="terminal-window"
       color="var(--accent-regular)"
       size="2.5rem"
       gradient
     />
-    <h2>Développeur Front-End</h2>
-    <p>Offir une expérience intuitive et agréable coté client</p>
-  </div>
-  <div class="stack gap-2 lg:gap-4">
-    <Icon
-      icon="terminal-window"
-      color="var(--accent-regular)"
-      size="2.5rem"
-      gradient
-    />
-    <h2>Développement Back-End</h2>
+
+    <h2>Back-End</h2>
+
     <p>
-      Organiser et mettre en place une architecture robuste pour chaque site ou
-      application
+      Conception et développement d'API REST et de services robustes avec Java,
+      Spring Boot et SQL.
     </p>
+
+    <div class="technologies">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>REST API</span>
+      <span>SQL</span>
+    </div>
   </div>
-  <div class="stack gap-2 lg:gap-4">
+
+  <div class="skill stack gap-2 lg:gap-4">
+    <Icon icon="code" color="var(--accent-regular)" size="2.5rem" gradient />
+
+    <h2>Front-End</h2>
+
+    <p>
+      Création d'interfaces web modernes, responsives et maintenables avec React
+      et TypeScript.
+    </p>
+
+    <div class="technologies">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>JavaScript</span>
+      <span>HTML / CSS</span>
+    </div>
+  </div>
+
+  <div class="skill stack gap-2 lg:gap-4">
     <Icon
       icon="strategy"
       color="var(--accent-regular)"
       size="2.5rem"
       gradient
     />
-    <h2>Full Stack</h2>
+
+    <h2>Full-Stack &amp; DevOps</h2>
+
     <p>
-      Etre développeur ne s'arrête pas qu'a seulement écrire du code. <br />
-      S'occuper d'un projet de A à Z passe aussi par l'intégration et le déploiement
-      continue et des tests de différents types , allant des unitaires aux tests
-      fonctionnels.
+      Intervention sur l'ensemble du cycle de développement : intégration,
+      tests, conteneurisation, déploiement et maintenance.
     </p>
+
+    <div class="technologies">
+      <span>Docker</span>
+      <span>Git</span>
+      <span>CI/CD</span>
+      <span>Tests</span>
+    </div>
   </div>
 </section>
 
@@ -58,12 +83,33 @@ import Icon from "./Icon.astro";
     gap: 3rem;
   }
 
+  .skill {
+    min-width: 0;
+  }
+
   .skills h2 {
     font-size: var(--text-lg);
   }
 
   .skills p {
     color: var(--gray-400);
+    line-height: 1.7;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .technologies span {
+    padding: 0.35rem 0.65rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--gray-300);
+    background: var(--gray-999_40);
   }
 
   @media (min-width: 50em) {
@@ -75,7 +121,7 @@ import Icon from "./Icon.astro";
     .skills {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5rem;
+      gap: 4rem;
     }
 
     .skills h2 {
