@@ -6,225 +6,146 @@ import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout
-  title="A propos | Christ Mbombo Mokonda"
-  description="About Christ Mbombo Mokonda"
+  title="À propos | Christ Mbombo Mokonda"
+  description="Découvrez le parcours, l'approche et les compétences de Christ Mbombo Mokonda, développeur Full-Stack freelance spécialisé en Java, Spring Boot et React."
 >
   <div class="stack gap-20">
     <main class="wrapper about">
-      <Hero title="À propos" tagline="">
-        <img
-          width="1553"
-          height="873"
-          src="/assets/christ-gimp.png"
-          alt="About Christ"
-        />
-      </Hero>
+      <Hero
+        title="À propos"
+        tagline="Développeur Full-Stack freelance spécialisé en Java, Spring Boot et React."
+      />
+
+      <section class="intro">
+        <div class="content">
+          <p class="lead">
+            Je suis <strong>Christ Mbombo Mokonda</strong>, développeur
+            Full-Stack basé en Île-de-France.
+          </p>
+
+          <p>
+            Je développe et fais évoluer des applications web en intervenant
+            aussi bien sur le back-end que sur le front-end. Mon expérience
+            professionnelle m'a principalement amené à travailler avec
+            <strong>Java, Spring Boot, React et MySQL</strong>, dans des
+            environnements où la qualité du code, la fiabilité et la
+            maintenabilité sont essentielles.
+          </p>
+
+          <p>
+            J'ai également eu l'occasion de travailler sur des problématiques
+            d'intégration d'API, de données sensibles, de tests, de CI/CD et de
+            choix techniques. Ces expériences m'ont permis de développer une
+            approche pragmatique : comprendre le besoin, proposer une solution
+            adaptée et aller jusqu'à sa mise en œuvre.
+          </p>
+        </div>
+      </section>
 
       <section>
-        <h2 class="section-title">À propos</h2>
-        <div class="content">
-          <p>
-            Médecine, Sociologie. Informatique. Voici dans l'ordre chronologique
-            les spécialités dans lesquels j'ai étudié dans l'enseignement
-            supérieur.<br />
-            Ce sont trois domaines différents les uns des autres. Mais dans chacun
-            d'entre eux j'ai appris des choses, maitrisé différents concepts . C'est
-            finalement en informatique que j'ai trouvé ma vocation, et plus particulièrement
-            le développement web. <br />
-          </p>
-          <p>
-            Tenter des expériences, parfois échouer, mais au final trouver un
-            plan, une idée pour s'en sortir, jusqu'à arriver à satisfication,
-            voici mon leitmotiv. <br />
-            Que ce soit dans mon parcours scolaire et professionnel, ainsi que dans
-            les projets web et personnels, cette idée est toujours présente, et elle
-            continuera à être ma source de motivation.
-          </p>
+        <div class="section-heading">
+          <span>01</span>
+          <h2>Mon approche</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="number">01</span>
+            <h3>Développer</h3>
+            <p>
+              Concevoir et développer des fonctionnalités robustes sur les
+              couches front-end et back-end, avec une attention particulière
+              portée à la lisibilité et à la maintenabilité du code.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">02</span>
+            <h3>Intégrer</h3>
+            <p>
+              Concevoir des API REST et intégrer des services externes dans des
+              applications métier en prenant en compte les contraintes
+              techniques et de sécurité.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">03</span>
+            <h3>Garantir la qualité</h3>
+            <p>
+              Mettre en place des tests, documenter les solutions et utiliser
+              les outils adaptés pour sécuriser les évolutions d'une
+              application.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="number">04</span>
+            <h3>Collaborer</h3>
+            <p>
+              Travailler efficacement avec les développeurs, QA et équipes
+              produit afin de transformer un besoin métier en solution concrète.
+            </p>
+          </article>
         </div>
       </section>
+
       <section>
-        <h2 class="section-title">Parcours Professionnel</h2>
-        <div class="content">
-          <p><strong>Développeur full Stack</strong></p>
-          <p><em>MTAE , Juillet 2023 - Octobre 2025</em></p>
-          <br />
-          <p>Missions :</p>
-          <p>
-            Développement de nouvelles fonctionnalités sur des applications Web
-          </p>
-          <p>Participation aux choix techniques et à la conception</p>
-          <p>Codage des solutions applicatives</p>
-          <p>Tests fonctionnels et d’intégration</p>
-          <p>
-            Intervention technique pour le déploiement et la maintenance sur nos
-            plateformes
-          </p>
-          <p>Environnement technique : Spring Boot · React.js · MySQL</p>
-          <br />
-          <p><em>Avis personnel</em></p>
-          <p>
-            Mon expérience professionnelle préfére. L'aboutissement de mes
-            années d'étude, dans un poste où je peux enfin mettre en pratique
-            tout ce que j'ai pu apprendre pendant ma scolarité et mes
-            différentes experiences professionnelles.
-          </p>
-          <br />
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Stack principale</h2>
         </div>
-        <div class="content">
-          <p><strong>Ingenieur Consultant Quality Insurance</strong></p>
-          <p><em>Athoria , Fevrier 2023 -Mai 2023</em></p>
-          <br />
-          <p>Client : <em>Groupe SeLoger</em></p>
-          <p>
-            Participation à l’élaboration de la stratégie de test en
-            collaboration avec mon équipe ( Product Manager , développeurs,
-            autres QA) lors des planning
-          </p>
-          <p>
-            Écritures des critères d’acceptances des tests en accord avec la
-            stratégie de tests définis
-          </p>
-          <p>
-            <strong>Tests de non-régression</strong> manuels sur les tickets JIRA
-            lors des sprints
-          </p>
-          <p>
-            Réalisation de <strong>tests end-to-end</strong> manuels sur les tickets
-            JIRA
-          </p>
-          <p>
-            Ecriture de <strong>cahier de tests</strong> sur des cas fonctionnels
-            fréquents avec XRAY
-          </p>
-          <p>Rédaction de la documentation technique (Confluence, Notion)</p>
-          <br />
-          <p><em>Avis personnel</em></p>
-          <p>
-            Une prise de risque compte tenu de mon profil plus axé développeur.
-          </p>
-          <p>
-            M'a permis pour la première fois de travailler en mode agile. Le
-            fait d'être consultant permet d'avoir une posture ou l'on doit être
-            obligé de réflechir aux choix des technologies que l'on propose à
-            l'entreprise client d'utiliser, et aux critères qui permettent ces
-            choix. J'ai aussi pu comprendre l'importance des tests à chaque
-            étape du développement.
-          </p>
-          <br />
-        </div>
-        <div class="content">
-          <p><strong>Alternant Développeur full stack</strong></p>
-          <p><em>Swisslife France , Janvier 2021 - Décembre 2022</em></p><br />
-          <p>Projet : <em>POC RabbitMQ</em></p>
-          <p>
-            Implémentation de scénario d’envoi et de réception de messages entre
-            deux applications et étude du fonctionnement des deux applications (
-            architecture applicative , langage utilisé etc…)
-          </p>
-          <p>
-            <strong>Benchmark</strong> des solutions existantes : choix des outils
-            et de la techno
-          </p>
-          <p>
-            Développement de POC sur l’outil RabbitMQ en NodeJS avec <strong
-              >création de log et script Bash</strong
-            >
-          </p>
-          <p>Analyse des resultats du POC en local</p>
-          <p>
-            Création d’un plan et implémentation des <strong
-              >tests unitaires</strong
-            > avec JEST
-          </p>
-          <p>
-            Mise en place d’une documentation d’utilisation de l’outil pour les
-            utilisateurs de l’outil (développeurs)
-          </p>
-          <br />
-          <p><em>Run</em></p>
-          <p>Maintenance de la documentation interne au sein de Confluence</p>
-          <p>
-            Création de divers pages au sein de la documentation interne , avec
-            des pages explicatifs sur un large éventail d'applications
-          </p>
-          <br />
-          <p><em>Avis personnel</em></p>
-          <p>
-            Mon experience professionnelle la plus longue en terme de
-            développement. Très intéressante elle m'a permis d'évoluer dans le
-            contexte d'une grosse entreprise.
-          </p>
-          <p>
-            Intéressante aussi du point de vue développement , j'ai pu
-            travailler sur du back-end ( NodeJS) , faire un benchmark et un POC
-            pour proposer une solution à une problématique donnée
-          </p>
-          <br />
-        </div>
-        <div class="content">
-          <p><strong>Développeur front-end stagiaire</strong></p>
-          <p><em>Vitriweb , Avril 2019- Mai 2019</em></p>
-          <br />
-          <p>Développement de maquettes de site en pré-production</p>
-          <p>Déploiement de maquettes après validation des clients</p>
-          <p>Reprise de sites de clients et refonte</p>
-          <p>Mise à jour des maquettes et sites à effectuer</p>
-          <br />
-          <p><em>Avis personnel</em></p>
-          <p>
-            Ma première expérience professionnelle dans le milieu de
-            l'informatique, et la plus courte aussi
-          </p>
-          <p>
-            Dans le contexte d'une TPE , une bonne porte d'entrée. Mais les
-            tâches ont fini par être très répétitive vers la fin du stage
-          </p>
-          <br />
+
+        <div class="stack-list">
+          <div class="stack-group">
+            <h3>Back-end</h3>
+            <p>Java 17 · Spring Boot · Hibernate · JPA · API REST</p>
+          </div>
+
+          <div class="stack-group">
+            <h3>Front-end</h3>
+            <p>React · JavaScript · TypeScript · HTML · CSS</p>
+          </div>
+
+          <div class="stack-group">
+            <h3>Base de données</h3>
+            <p>MySQL · PostgreSQL</p>
+          </div>
+
+          <div class="stack-group">
+            <h3>Outils & CI/CD</h3>
+            <p>Git · GitLab · Jenkins · Docker · Maven</p>
+          </div>
+
+          <div class="stack-group">
+            <h3>Tests & documentation</h3>
+            <p>JUnit · Jest · Swagger / OpenAPI</p>
+          </div>
         </div>
       </section>
+
       <section>
-        <h2 class="section-title">Education</h2>
-        <div class="content">
-          <p><strong>Master Ingénierie du Web</strong></p>
-          <p>ESGI Paris , 2021-2023</p>
-          <br />
+        <div class="section-heading">
+          <span>03</span>
+          <h2>Formation</h2>
         </div>
-        <div class="content">
-          <p><strong>Licence Informatique</strong></p>
-          <p>Université Paris 8 , 2015-2019</p>
-        </div>
-      </section>
-      <section>
-        <h2 class="section-title">Compétences</h2>
-        <div class="content">
-          <p><strong>Langage / Framework</strong></p>
-          <p>
-            Javascript , Typescript , NodeJS, Express, ReactJS, VueJS, AstroJS
-          </p>
-          <p>Python, Flask , Django</p>
-          <p>PHP , Symfony , Laravel</p>
-          <p>SQL , Postgre, MongoDB</p>
-          <br />
-        </div>
-        <div class="content">
-          <p><strong>Technologies / outils</strong></p>
-          <p>Git,GitLab,Github Actions,Docker</p>
-          <p>Salesforce, XRAY / JIRA</p>
-          <p>Stack ELK,RabbitMQ, Confluence ,Pandas, Numpy</p>
-          <br />
-        </div>
-        <div class="content">
-          <p><strong>Tests</strong></p>
-          <p>Unitaire : Jest, PHPUnit</p>
-          <p>Performance : K6 , Blackfire</p>
-          <p>Fonctionnel : Cucumber</p>
-          <p>End to End : Nightwatch</p>
-          <br />
-        </div>
-        <div class="content">
-          <p><strong>Méthodologie et qualité de code</strong></p>
-          <p>Agile – SCRUM</p>
-          <p>Cycle en V</p>
+
+        <div class="education">
+          <div class="education-item">
+            <div>
+              <h3>Master Ingénierie du Web</h3>
+              <p>ESGI Paris</p>
+            </div>
+            <span>2021 — 2023</span>
+          </div>
+
+          <div class="education-item">
+            <div>
+              <h3>Licence Informatique</h3>
+              <p>Université Paris 8</p>
+            </div>
+            <span>2015 — 2019</span>
+          </div>
         </div>
       </section>
     </main>
@@ -237,56 +158,199 @@ import Hero from "../components/Hero.astro";
   .about {
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
-  }
-
-  img {
-    margin-top: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: var(--shadow-md);
+    gap: 5rem;
   }
 
   section {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    color: var(--gray-200);
+    gap: 1.5rem;
   }
 
-  .section-title {
-    grid-column-start: 1;
-    font-size: var(--text-xl);
-    color: var(--gray-0);
+  .intro {
+    max-width: 70ch;
+    margin-inline: auto;
   }
 
   .content {
-    grid-column: 2 / 4;
+    color: var(--gray-200);
+    font-size: var(--text-lg);
+    line-height: 1.7;
   }
 
-  .content :global(a) {
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
+  .content p + p {
+    margin-top: 1.5rem;
   }
 
-  .content :global(a:hover),
-  .content :global(a:focus) {
-    text-decoration-color: currentColor;
+  .lead {
+    font-size: var(--text-2xl);
+    line-height: 1.3;
+    color: var(--gray-0);
   }
 
-  @media (min-width: 50em) {
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    border-bottom: 1px solid var(--gray-800);
+    padding-bottom: 1rem;
+  }
+
+  .section-heading span {
+    font-family: var(--font-brand);
+    font-size: var(--text-sm);
+    color: var(--accent);
+  }
+
+  .section-heading h2 {
+    margin: 0;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.75rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1rem;
+    background: var(--gray-900);
+  }
+
+  .number {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: var(--gray-500);
+    font-family: var(--font-brand);
+    font-size: var(--text-sm);
+  }
+
+  .card h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--gray-300);
+    line-height: 1.6;
+  }
+
+  .stack-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-800);
+  }
+
+  .stack-group {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .stack-group h3 {
+    margin: 0;
+    font-size: var(--text-base);
+  }
+
+  .stack-group p {
+    margin: 0;
+    color: var(--gray-300);
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-800);
+  }
+
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--gray-800);
+  }
+
+  .education-item h3 {
+    margin: 0 0 0.35rem;
+  }
+
+  .education-item p,
+  .education-item span {
+    margin: 0;
+    color: var(--gray-400);
+  }
+
+  .freelance {
+    padding: 3rem;
+    border: 1px solid var(--gray-800);
+    border-radius: 1.5rem;
+    background: var(--gradient-subtle);
+  }
+
+  .freelance-content {
+    max-width: 60ch;
+  }
+
+  .eyebrow {
+    font-family: var(--font-brand);
+    font-size: var(--text-sm);
+    color: var(--accent);
+  }
+
+  .freelance h2 {
+    margin: 0.75rem 0 1rem;
+  }
+
+  .freelance p {
+    margin-bottom: 1.5rem;
+    color: var(--gray-300);
+    font-size: var(--text-lg);
+    line-height: 1.6;
+  }
+
+  .button {
+    display: inline-flex;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background: var(--gray-0);
+    color: var(--gray-900);
+    font-family: var(--font-brand);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform var(--theme-transition);
+  }
+
+  .button:hover,
+  .button:focus {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 50em) {
     .about {
-      display: grid;
-      grid-template-columns: 1fr 60% 1fr;
+      gap: 3.5rem;
     }
 
-    .about > :global(:first-child) {
-      grid-column-start: 2;
+    .cards {
+      grid-template-columns: 1fr;
     }
 
-    section {
-      display: contents;
-      font-size: var(--text-lg);
+    .stack-group {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .education-item {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .freelance {
+      padding: 2rem;
     }
   }
 </style>
